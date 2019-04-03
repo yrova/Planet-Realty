@@ -1,0 +1,108 @@
+@import '~antd/dist/antd.css';
+
+.menu-bar{
+  padding: 0 20px;
+  border-bottom: solid 1px #e8e8e8;
+  overflow-y: hidden;
+  box-shadow: 0 0 30px #f3f1f1;
+}
+
+.menu-logo{
+    width: 150px;
+    float: left;
+}
+
+.menu-logo a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 19px 20px;
+    text-transform: capitalize;
+}
+
+.menu-container{
+  width: calc(100% - 150px);
+  float: left;
+}
+
+.menu-container .ant-menu-item{
+  padding: 0px 5px;
+}
+
+.menu-container .ant-menu-item a {
+  padding: 10px 15px;
+}
+
+.menu-container .ant-menu-horizontal{
+  border-bottom: none;
+}
+
+.menu-container .left-menu{
+  float:left;
+}
+
+.menu-container .right-menu{
+  float:right;
+}
+
+.bar-menu{
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+}
+
+.bars-btn{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #1890ff;
+  position: relative;
+}
+
+.bars-btn:after, .bars-btn:before {
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: #1890ff;
+}
+
+.bars-btn:after{
+  top:auto;
+  bottom: -6px;
+}
+
+.ant-drawer-body{
+  padding: 0;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item, .ant-drawer-body .ant-menu-horizontal {
+  display: inline-block;
+  width: 100%;
+}
+
+@media(max-width: 767px){
+    .bar-menu{
+        display:inline-block;
+    }
+
+    .left-menu,.right-menu{
+        display:none;
+    }
+
+    .logo a{
+        margin-left: -20px;
+    }
+
+    .menu-container .ant-menu-item{
+        padding: 1px 20px;
+    }
+
+    .logo a{
+        padding: 10px 20px;
+    }
+}

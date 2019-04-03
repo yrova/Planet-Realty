@@ -9,7 +9,7 @@ class RightMenu extends Component {
                 <Menu.Item key="mail">
                     <Link to="/login">Login</Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item key="app">
                     <Link to="/register">Register</Link>
                 </Menu.Item>
             </Menu>

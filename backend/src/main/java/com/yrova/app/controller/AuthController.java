@@ -96,4 +96,6 @@ public class AuthController {
 
         return ResponseEntity.created(location).body(new ApiResponse(true, "User registered successfully"));
     }
+
+    //TODO: Create exoplanet auth per user!!!!!!
 }

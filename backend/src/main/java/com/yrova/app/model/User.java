@@ -1,11 +1,13 @@
 package com.yrova.app.model;
 
-
 import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+
+import com.yrova.app.model.audit.DateAudit;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,7 +21,7 @@ import java.util.Set;
         })
 })
 
-public class User {
+public class User extends DateAudit{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -16,9 +16,6 @@ public class ExoPlanetController{
     ExoPlanetRepository exoPlanetRepository;
 
 
-    @GetMapping("/{exoPlanetId"})
-    
-
     
 
 

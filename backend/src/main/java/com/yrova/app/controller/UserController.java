@@ -1,3 +1,5 @@
+package com.yrova.app.controller;
+
 import com.yrova.app.exception.ResourceNotFoundException;
 import com.yrova.app.model.User;
 import com.yrova.app.payload.UserIdentityAvailability;
@@ -52,7 +54,7 @@ public class UserController {
             .orElseThrow(() -> new ResourceNotFoundException("User", "username", username));
 
 
-        UserProfile userProfile = new UserProfile(user.getId(), user.getUsername(), user.get);
+        UserProfile userProfile = new UserProfile(user.getId(), user.getUsername(), user.getCreatedAt());
 
         return userProfile;
     }
